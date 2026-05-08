@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Note | 당신의 여행을 기록하는 가장 따뜻한 방법</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">Local Note</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active">홈</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">로컬 피드</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">여행 지도</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">저장한 장소</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <button class="button button--ghost">로그인</button>
+                <button class="button button--primary button--sm">기록 시작하기</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Cinematic Background Slideshow -->
+            <div class="hero__slides">
+                <div class="hero__slide hero__slide--1" style="background-image: url('./images/jeju.png');"></div>
+                <div class="hero__slide hero__slide--2" style="background-image: url('./images/korea.png');"></div>
+                <div class="hero__slide hero__slide--3" style="background-image: url('./images/gangwon.png');"></div>
+            </div>
+
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <span class="hero__label">Nature & Record</span>
+                    <h2 class="hero__title">당신의 여행을 기록하는 가장 따뜻한 방법</h2>
+                    <p class="hero__description">길을 걷다 우연히 마주친 작은 식당, 바람결에 실려온 커피 향.<br>그날의 공기까지 담아내는 로컬 맛집 기록장, 로컬 노트입니다.</p>
+                    <div class="hero__actions">
+                        <button class="button button--primary button--lg">지금 기록하기</button>
+                        <button class="button button--secondary button--lg">공간 탐색하기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="section quote-section">
+            <div class="quote-section__inner">
+                <span class="section__eyebrow">A Note from Local Note</span>
+                <p class="quote-section__text">“여행 끝에 오래 기억되는 건<br>결국 작은 공간이었다”</p>
+                <p class="quote-section__sub">비 오는 날 우연히 발견한 이름 없는 식당의 온기</p>
+            </div>
+        </section>
+
+        <!-- Tag Filter Section (Full Width Background) -->
+        <div class="tag-filter">
+            <div class="tag-filter__container">
+                <div class="tag-filter__list">
+                    <button class="tag-item tag-item--active">#전체</button>
+                    <button class="tag-item">#혼밥맛집</button>
+                    <button class="tag-item">#조용한카페</button>
+                    <button class="tag-item">#로컬추천</button>
+                    <button class="tag-item">#야경맛집</button>
+                    <button class="tag-item">#바다근처</button>
+                    <button class="tag-item">#독서하기좋은</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Wrapper -->
+        <div class="content-wrapper">
+
+            <div class="layout-grid">
+                <div class="content-main">
+                    <!-- Community Feed (Masonry Style) -->
+                    <section class="section section--feed">
+                        <!-- Background Layer for Depth -->
+                        <div class="section-depth-bg section-depth-bg--sea"></div>
+                        
+                        <div class="section__header">
+                            <div class="section__title-group">
+                                <span class="section__eyebrow font-analog">Spring 2025</span>
+                                <h3 class="section__title">커뮤니티 피드</h3>
+                                <p class="section__desc">오늘 올라온 여행자들의 조용한 기록과 따뜻한 발견</p>
+                            </div>
+                            <a href="#" class="section__link">더 많은 기록 보기 →</a>
+                        </div>
+                        
+                        <div class="masonry-grid">
+                            <!-- Feed Card 1 -->
+                            <article class="feed-card">
+                                <div class="feed-card-image">
+                                    <img src="./images/kitchen.png" alt="숲속의 작은 주방" />
+                                    <span class="feed-card-badge">로컬 맛집</span>
+                                </div>
+                                <div class="feed-card__body">
+                                    <h4 class="feed-card__title">숲속의 작은 주방</h4>
+                                    <p class="feed-card__location">📍 강원도 평창군 봉평면</p>
+                                    <p class="feed-description">
+                                        길 걷다가 우연히 들어갔는데 생각보다 너무 좋았어요.
+                                        창밖 초록 풍경 보면서 천천히 먹다 보니까 
+                                        괜히 마음까지 편안해지더라고요ㅎㅎ
+                                    </p>
+                                    <div class="feed-card__divider"></div>
+                                    <div class="feed-card__footer">
+                                        <div class="user-profile">
+                                            <div class="user-profile__avatar" style="background-image: url('./images/traveler-minsu.png');"></div>
+                                            <div class="user-profile__info">
+                                                <span class="user-profile__name">여행자 민수</span>
+                                                <span class="user-profile__date">2025. 05. 06</span>
+                                            </div>
+                                        </div>
+                                        <div class="feed-card__stats">
+                                            <button class="reaction-button reaction-button--like" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">124</span>
+                                            </button>
+                                            <button class="reaction-button reaction-button--comment" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M21,11.5 C21,15.918 16.971,19.5 12,19.5 C10.45,19.5 9,19.1 7.7,18.4 L3,20 L4.6,15.3 C3.6,14.1 3,12.9 3,11.5 C3,7.082 7.029,3.5 12,3.5 C16.971,3.5 21,7.082 21,11.5 Z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">42</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Feed Card 2 -->
+                            <article class="feed-card">
+                                <div class="feed-card-image">
+                                    <img src="./images/cafe.png" alt="오후의 서재" />
+                                    <span class="feed-card-badge">조용한 카페</span>
+                                </div>
+                                <div class="feed-card__body">
+                                    <h4 class="feed-card__title">오후의 서재</h4>
+                                    <p class="feed-card__location">📍 제주도 애월읍 하가리</p>
+                                    <p class="feed-description">
+                                        커피 한 잔 시켜놓고 한참 멍하니 있다 왔어요 ☕  
+                                        늦은 오후 햇살이 너무 예뻐서 
+                                        괜히 오래 머물고 싶어지는 공간이었어요~~
+                                    </p>
+                                    <div class="feed-card__divider"></div>
+                                    <div class="feed-card__footer">
+                                        <div class="user-profile">
+                                            <div class="user-profile__avatar" style="background-image: url('./images/jinis-journal.png');"></div>
+                                            <div class="user-profile__info">
+                                                <span class="user-profile__name">지니의 기록</span>
+                                                <span class="user-profile__date">2025. 10. 02</span>
+                                            </div>
+                                        </div>
+                                        <div class="feed-card__stats">
+                                            <button class="reaction-button reaction-button--like" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">89</span>
+                                            </button>
+                                            <button class="reaction-button reaction-button--comment" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M21,11.5 C21,15.918 16.971,19.5 12,19.5 C10.45,19.5 9,19.1 7.7,18.4 L3,20 L4.6,15.3 C3.6,14.1 3,12.9 3,11.5 C3,7.082 7.029,3.5 12,3.5 C16.971,3.5 21,7.082 21,11.5 Z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">15</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Feed Card 3 -->
+                            <article class="feed-card">
+                                <div class="feed-card-image">
+                                    <img src="./images/sunset.png" alt="어느 바닷가 식당" />
+                                    <span class="feed-card-badge">로컬 픽</span>
+                                </div>
+                                <div class="feed-card__body">
+                                    <h4 class="feed-card__title">어느 바닷가 식당</h4>
+                                    <p class="feed-card__location">📍 부산 광안리 해변로</p>
+                                    <p class="feed-description">
+                                        해 질 때 창가 자리에 앉아 먹었는데 
+                                        파도 소리 들으면서 먹는 시간이 너무 좋았어요~
+                                        부산 오면 다시 가고 싶은 곳이에요 :)
+                                    </p>
+                                    <div class="feed-card__divider"></div>
+                                    <div class="feed-card__footer">
+                                        <div class="user-profile">
+                                            <div class="user-profile__avatar" style="background-image: url('./images/ocean-traveler.png');"></div>
+                                            <div class="user-profile__info">
+                                                <span class="user-profile__name">바다여행자</span>
+                                                <span class="user-profile__date">2025. 08. 18</span>
+                                            </div>
+                                        </div>
+                                        <div class="feed-card__stats">
+                                            <button class="reaction-button reaction-button--like" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">210</span>
+                                            </button>
+                                            <button class="reaction-button reaction-button--comment" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M21,11.5 C21,15.918 16.971,19.5 12,19.5 C10.45,19.5 9,19.1 7.7,18.4 L3,20 L4.6,15.3 C3.6,14.1 3,12.9 3,11.5 C3,7.082 7.029,3.5 12,3.5 C16.971,3.5 21,7.082 21,11.5 Z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">88</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Feed Card 4 -->
+                            <article class="feed-card">
+                                <div class="feed-card-image">
+                                    <img src="./images/meal.png" alt="나홀로 식당" />
+                                    <span class="feed-card-badge">혼밥 추천</span>
+                                </div>
+                                <div class="feed-card__body">
+                                    <h4 class="feed-card__title">나홀로 식당</h4>
+                                    <p class="feed-card__location">📍 서울시 망원동 포은로</p>
+                                    <p class="feed-description">
+                                        혼자 가도 전혀 어색하지 않은 분위기였어요.  
+                                        조용해서 천천히 식사하기 좋았고, 
+                                        하루 마무리하기에 딱 괜찮은 곳!
+                                    </p>
+                                    <div class="feed-card__divider"></div>
+                                    <div class="feed-card__footer">
+                                        <div class="user-profile">
+                                            <div class="user-profile__avatar" style="background-image: url('./images/Solo Gourmet.png');"></div>
+                                            <div class="user-profile__info">
+                                                <span class="user-profile__name">Solo Gourmet</span>
+                                                <span class="user-profile__date">2026. 01. 14</span>
+                                            </div>
+                                        </div>
+                                        <div class="feed-card__stats">
+                                            <button class="reaction-button reaction-button--like" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">156</span>
+                                            </button>
+                                            <button class="reaction-button reaction-button--comment" type="button">
+                                                <svg class="reaction-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M21,11.5 C21,15.918 16.971,19.5 12,19.5 C10.45,19.5 9,19.1 7.7,18.4 L3,20 L4.6,15.3 C3.6,14.1 3,12.9 3,11.5 C3,7.082 7.029,3.5 12,3.5 C16.971,3.5 21,7.082 21,11.5 Z"/>
+                                                </svg>
+                                                <span class="reaction-button__count">34</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Travel Archive Timeline Section -->
+                    <section class="section section--archive">
+                        <!-- Background Layer for Depth -->
+                        <div class="section-depth-bg section-depth-bg--window"></div>
+
+                        <div class="section__header">
+                            <div class="section__title-group">
+                                <span class="section__eyebrow font-analog">Travel Archive</span>
+                                <h3 class="section__title">나의 여행 타임라인</h3>
+                                <p class="section__desc">흩어진 시간들을 하나의 선으로 잇는 당신만의 기록</p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__date">Spring 2025</div>
+                                <div class="timeline__content">
+                                    <h4 class="timeline__location">제주, 애월의 봄</h4>
+                                    <p class="timeline__desc">유채꽃 사이로 숨어있는 작은 카페 투어</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__date">Summer 2025</div>
+                                <div class="timeline__content">
+                                    <h4 class="timeline__location">강릉, 바다의 맛</h4>
+                                    <p class="timeline__desc">새벽 시장의 활기와 시원한 막국수 한 그릇</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__date">Winter 2025</div>
+                                <div class="timeline__content">
+                                    <h4 class="timeline__location">부산, 골목의 기록</h4>
+                                    <p class="timeline__desc">영도 골목길에서 만난 로컬들이 아끼는 노포</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__date">Spring 2026</div>
+                                <div class="timeline__content">
+                                    <h4 class="timeline__location">남해, 다랭이 마을</h4>
+                                    <p class="timeline__desc">바다를 마주한 계단식 논위의 평화로운 산책</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Aside / Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar__sticky">
+                        <div class="record-card">
+                            <h2 class="record-card__title">오늘의 여행 기록하기</h2>
+                            <p class="record-card__desc">당신의 특별한 순간을<br>한 문장으로 남겨보세요.</p>
+                            <button class="today-record-button">기록하기</button>
+                        </div>
+
+                        <div class="local-pick-card">
+                            <h4 class="local-pick-title font-analog">오늘의 로컬 픽</h4>
+                            <div class="pick-items">
+                                <!-- Pick Card 1 -->
+                                <div class="pick-item">
+                                    <img src="./images/quiet-reading-cafe.png" alt="조용한 독서 카페" />
+                                    <div class="pick-text">
+                                        <h3>조용한 독서 카페</h3>
+                                        <span class="location">서울 망원동</span>
+                                        <p class="desc">책 냄새와 커피 향이 머무는 오후</p>
+                                        <span class="tag">#조용한카페</span>
+                                    </div>
+                                </div>
+                                <!-- Pick Card 2 -->
+                                <div class="pick-item">
+                                    <img src="./images/brunch-after-walk.png" alt="산책 후 브런치" />
+                                    <div class="pick-text">
+                                        <h3>산책 후 브런치</h3>
+                                        <span class="location">제주 한림읍</span>
+                                        <p class="desc">숲길 끝에서 만난 가벼운 한 접시</p>
+                                        <span class="tag">#브런치</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <h2 class="footer__logo">Local Note</h2>
+                <p class="footer__desc">우리는 여행의 감동을 맛과 기록으로 잇습니다. 자연과 로컬의 따뜻함을 담아내는 아카이브.</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Service</h5>
+                    <ul class="footer__list">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h5 class="footer__col-title">Community</h5>
+                    <ul class="footer__list footer__list--social">
+                        <li>
+                            <a href="#" class="footer__social-link footer__social-link--instagram" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link footer__social-link--youtube" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 9.75 8.48 15.45 11.75 9.75 15.02"></polygon></svg>
+                            </a>
+                        </li>
+                        <li><a href="#">뉴스레터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                    <p class="footer__copyright">&copy; 2025 Local Note. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global SVG Gradients -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="instagram-gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#F58529" />
+                <stop offset="50%" stop-color="#DD2A7B" />
+                <stop offset="100%" stop-color="#8134AF" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
