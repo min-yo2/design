@@ -64,7 +64,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("./images/종이질감 배경.png");
+    background-image: url("./images/paper-texture-bg.png");
     background-size: 700px;
     background-repeat: repeat;
     opacity: 0.72;
